@@ -3,6 +3,9 @@
   "image": "mcr.microsoft.com/vscode/devcontainers/python:3.13",
   "forwardPorts": [8000],
   "postCreateCommand": "pip install -r requirements.txt",
+  "mounts": [
+            "source=${localEnv:HOME}/.ssh,target=/root/.ssh,type=bind,consistency=cached"
+        ],
   "customizations": {
     "vscode": {
       "extensions": [
