@@ -1,3 +1,21 @@
+/* Hide bullet points for participants and style delete icon */
+.participants-list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.delete-participant {
+  cursor: pointer;
+  color: #c00;
+  margin-left: 0.5em;
+  font-size: 1em;
+  vertical-align: middle;
+  transition: color 0.2s;
+}
+.delete-participant:hover {
+  color: #f33;
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -63,6 +81,8 @@ section h3 {
   border: 1px solid #ddd;
   border-radius: 5px;
   background-color: #f9f9f9;
+  /* Add a little extra padding for the participants section */
+  padding-bottom: 20px;
 }
 
 .activity-card h4 {
@@ -88,8 +108,6 @@ section h3 {
 .form-group select {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
   font-size: 16px;
 }
 
